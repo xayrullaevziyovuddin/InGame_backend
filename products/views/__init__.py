@@ -1,6 +1,6 @@
 from .banners import BannerViewSet
-from .categories import CategoryListView, CategoryDetailView, ProductTypeViewSet
+from .categories import CategoryViewSet, ProductTypeViewSet
 from .brands import BrandViewSet
 
-__all__ = ["BannerViewSet", "CategoryListView", "CategoryDetailView", "ProductTypeViewSet", "BrandViewSet"]
+__all__ = ["BannerViewSet", "CategoryViewSet", "ProductTypeViewSet", "BrandViewSet"]
 

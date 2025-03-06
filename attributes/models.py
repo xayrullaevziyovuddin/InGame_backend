@@ -11,10 +11,11 @@ class AttributeType(models.Model):
 
 class Attribute(models.Model):
     """Значение характеристики (например, 'Проводные наушники')"""
-    attbute_type = models.ForeignKey(AttributeType, on_delete=models.CASCADE, related_name="attributes")
+    attribute_type = models.ForeignKey(AttributeType, on_delete=models.CASCADE, related_name="attributes")
     value = models.CharField(max_length=255)
 
     def __str__(self):
-        return f"{self.attbute_type.name}: {self.value}"
+        return f"{self.attribute_type.name}: {self.value}"
+
 
 

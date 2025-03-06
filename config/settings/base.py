@@ -58,6 +58,7 @@ LOCAL_APPS = [
     "comments",
     "news",
     "services",
+    "attributes"
 ]
 
 INSTALLED_APPS = BASE_APPS + THIRD_PARTY_APPS + LOCAL_APPS
